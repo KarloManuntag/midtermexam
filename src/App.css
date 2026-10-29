@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Light blue tinted page background */
+  background-color: #f0f7ff;
+}
+
+/* Center the app on the viewport */
+.app-viewport {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main White Card Container with subtle blue border */
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 28px 24px;
+  border-radius: 16px;
+  border: 1px solid #e1effe;
+  box-shadow: 0 10px 25px rgba(0, 119, 255, 0.06);
+  text-align: center;
+}
+
+/* Header Title in Deep Blue */
+.header-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1e3a8a; /* Soft Navy / Dark Blue */
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+/* Output Display Banner in Soft Pastel Blue */
+.display-box {
+  background-color: #e0f2fe; /* Light sky blue */
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-box p {
+  color: #0369a1; /* Deep sky blue text */
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* 3-Column Keypad Layout */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+/* Light Blue Keypad Buttons */
+.keypad-btn {
+  background-color: #f0f9ff; /* Ultra light blue */
+  border: 1.5px solid #e0f2fe;
+  border-radius: 8px;
+  padding: 16px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0284c7; /* Medium vibrant blue */
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Hover & Active Effects */
+.keypad-btn:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.keypad-btn:active {
+  transform: scale(0.96);
+}
